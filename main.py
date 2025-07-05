@@ -7,10 +7,7 @@ import bcrypt
 import models, schemas
 from database import get_db_global, get_db_cliente
 import crud
-import uvicorn
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=False)
-    
+
 logging.basicConfig()
 logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
